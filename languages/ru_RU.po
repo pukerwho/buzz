@@ -1,0 +1,144 @@
+"Project-Id-Version: treba-wp\n"
+"POT-Creation-Date: 2021-02-16 20:22+0300\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: treba-wp\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;_nx_noop:1,2,3c;esc_attr__;esc_attr_e;esc_html__;esc_html_e\n"
+"X-Poedit-Basepath: ..\n"
+"X-Generator: Poedit 2.2.4\n"
+"X-Poedit-SearchPath-0: .\n"
+
+msgid "Рейтинг сайтів"
+msgstr "Рейтинг сайтов"
+
+msgid "Великий каталог сайтів. SEO-аналіз веб сайтів з перевіреними показниками."
+msgstr "Большой каталог сайтов. SEO-анализ веб-сайтов с проверенными показателями."
+
+msgid "Популярні сайти"
+msgstr "Популярные сайты"
+
+msgid "Нові сайти"
+msgstr "Новые сайты"
+
+msgid "Зараз дивляться"
+msgstr "Сейчас смотрят"
+
+msgid "Наш вибір"
+msgstr "Наш выбор"
+
+msgid "Сайти з високим рейтингом"
+msgstr "Сайты с высоким рейтингом"
+
+msgid "Оцінка оптимізації"
+msgstr "Оценка оптимизации"
+
+msgid "Вартість"
+msgstr "Стоимость"
+
+msgid "Сайти з високою вартістю"
+msgstr "Сайты с высокой стоимостью"
+
+msgid "Сайти на CMS"
+msgstr "Сайты на CMS"
+
+msgid "Каталог сайтів"
+msgstr "Каталог сайтов"
+
+msgid "Головна"
+msgstr "Главная"
+
+msgid "Сайти"
+msgstr "Сайты"
+
+msgid "Аналіз сайту"
+msgstr "Анализ сайта"
+
+msgid "Інформація оновлена"
+msgstr "Информация обновлена"
+
+msgid "Загальний рейтинг"
+msgstr "Общий рейтинг"
+
+msgid "Інформація про сайт"
+msgstr "Информация о сайте"
+
+msgid "Назва сайту"
+msgstr "Название сайта"
+
+msgid "Не заповнено"
+msgstr "Не заполнено"
+
+msgid "Мова"
+msgstr "Язык"
+
+msgid "Орієнтована вартість"
+msgstr "Ориентировочная стоимость"
+
+msgid "Дата реестрації"
+msgstr "Дата регистрации"
+
+msgid "Дата закінчення"
+msgstr "Дата окончания"
+
+msgid "Вік"
+msgstr "Возраст"
+
+msgid "Реестратор"
+msgstr "Регистратор"
+
+msgid "Кількість символів"
+msgstr "Количество символов"
+
+msgid "Аналітика на сайті"
+msgstr "Аналитика на сайте"
+
+msgid "Є на сайті"
+msgstr "Есть на сайте"
+
+msgid "Немає"
+msgstr "Отсутствует"
+
+msgid "SEO оцінки"
+msgstr "SEO оценки"
+
+msgid "Технічна оптимізація"
+msgstr "Техническая оптимизация"
+
+msgid "Внутрішня оптимізація"
+msgstr "Внутренняя оптимизация"
+
+msgid "Зовнішня оптимізація"
+msgstr "Внешняя оптимизация"
+
+msgid "Загальна оптимізація"
+msgstr "Общая оптимизация"
+
+msgid "Сайт перевірений модератором"
+msgstr "Сайт проверен модератором"
+
+msgid "Поділитись"
+msgstr "Поделиться"
+
+msgid "Ще сайти на CMS"
+msgstr "Еще сайты на CMS"
+
+msgid "Переглядів"
+msgstr "Просмотров"
+
+msgid "Рейтинг сайтів. Порівняння вебсайтів. Ресурс буде цікавим тим, хто займається SEO, а також намагається заробити в інтернеті за допомогую сайтів"
+msgstr "Рейтинг сайтов. Сравнение вебсайтов. Ресурс будет интересен тем, кто занимается SEO, а также пытается заработать в интернете с помощью сайтов"
+
+msgid "Більш ніж"
+msgstr "Более чем"
+
+msgid "сайтів"
+msgstr "сайтов"
+
+msgid "Контакти"
+msgstr "Контакты"

@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-200 text-gray-800;
+}
+.absolute-link {
+  @apply w-full h-full absolute top-0 left-0 z-10;
+}
+.btn-primary {
+  @apply bg-indigo-500 text-gray-200 rounded;
+}
+.btn-secondary {
+  @apply bg-gray-200 hover:bg-indigo-500 dark:bg-gray-600 dark:text-gray-200 hover:dark:bg-gray-700 text-gray-800 hover:text-gray-200 rounded;
+}
+.space-top {
+  @apply pt-24;
+}
+.header .sub-menu {
+  @apply bg-gradient-to-r from-theme-gray to-theme-dark border-2 border-theme-gray hover:text-white rounded-xl px-6 py-4;
+}
+.header .top-menu {
+  @apply -mx-3;
+}
+.header .top-menu li {
+  @apply px-3;
+}
+.header .top-menu a {
+  @apply text-gray-200 hover:text-blue-500;
+}
+.welcome-image {
+  @apply relative rounded-xl;
+}
+.welcome-image-bg {
+  @apply w-full h-full absolute;
+}
+.welcome-title {
+  @apply text-3xl xl:text-5xl xl:leading-16;
+}
+.welcome-description {
+  @apply text-lg xl:text-xl;
+}
+.welcome-btn {
+  @apply inline-flex p-3 xl:p-4;
+}
+
+.custom-input {
+  @apply rounded outline-none;
+}
+.custom-input:focus {
+  @apply border border-primary;
+}
+
+.pagination .page-numbers {
+  @apply inline-flex items-center justify-center w-10 h-10 border border-primary rounded hover:text-white hover:bg-primary px-3 mx-3;
+}
+.pagination .page-numbers.current {
+  @apply bg-white text-theme-dark;
+}
+
+.content a {
+  @apply text-blue-500;
+}
+.content p {
+  @apply text-lg leading-[1.5] mb-4;
+}
+.content p:last-of-type {
+  @apply mb-0;
+}
+.content h2 {
+  @apply text-3xl mb-6 mt-6;
+}
+.content h3 {
+  @apply text-2xl mb-4 mt-6;
+}
+.content h4 {
+  @apply text-xl mb-4 mt-6;
+}
+.content ul {
+  @apply list-disc text-gray-800 dark:text-gray-200 ml-4 mb-8;
+}
+.content ol {
+  @apply list-decimal text-gray-800 dark:text-gray-200 mb-8 mt-4;
+}
+.content ol li {
+  @apply text-lg ml-4;
+}
+.content ul li {
+  @apply text-lg list-disc;
+}
+.content li {
+  @apply text-gray-800 mb-2;
+}
+.content li:last-of-type {
+  @apply mb-0;
+}
+.content .wp-block-image {
+  @apply border shadow-xl rounded-lg p-5 mb-8;
+}
+.content .wp-block-image img {
+  @apply w-full;
+}
+.content .wp-block-image figcaption {
+  @apply text-center italic mt-4 mb-0;
+}
+
+.lang .lang-item {
+  @apply text-sm text-gray-300 border border-gray-400 rounded-lg p-1 list-none opacity-60 hover:opacity-100;
+}
+.lang .lang-item:first-of-type {
+  @apply mr-2;
+}
+.lang .lang-item.current-lang {
+  @apply opacity-100 font-semibold;
+}
+
+.treba-links a {
+  @apply block text-sm mb-1;
+}
+
+.top-block {
+  @apply bg-white py-16;
+}
