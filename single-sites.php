@@ -333,7 +333,7 @@
                   'meta_query' => array(
                     'relation' => 'AND',
                     array(
-                      'key' => 'check_site_cms_test',
+                      'key' => 'check_site_cms_meta',
                       'value' => $site_cms,
                       'compare' => 'IN',
                     ),
