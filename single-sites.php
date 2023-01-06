@@ -321,33 +321,35 @@
             </div>
           </div>
           <!-- CMS -->
-          <?php if ($site_cms != '🤷‍♂️'): ?>
-          <div class="rounded-lg shadow-lg mb-6">
-            <h2 class="text-gray-200 text-lg text-center bg-theme-dark rounded-t-lg p-3"><?php _e("Ще сайти на CMS", "catalog-wp"); ?> <?php echo $site_cms; ?></h2>
-            <div class="bg-white rounded-b-lg p-3">
-              <?php 
-                $top_sites = new WP_Query( array( 
-                  'post_type' => 'sites', 
-                  'posts_per_page' => 10,
-                  'order' => 'DESC',
-                  'meta_query' => array(
-                    'relation' => 'AND',
-                    array(
-                      'key' => 'check_site_cms_meta',
-                      'value' => $site_cms,
-                      'compare' => 'IN',
-                    ),
-                    array(
-                      'orderby'   => 'rand',
-                    ),
-                  ),
-                ) );
-                if ($top_sites->have_posts()) : while ($top_sites->have_posts()) : $top_sites->the_post(); 
-              ?>
-                <div class="border-b border-gray-200 last-of-type:border-transparent mb-2 last-of-type:mb-0 pb-2 last-of-type:pb-0"><a href="<?php the_permalink(); ?>" class="text-gray-700 hover:text-blue-500"><?php the_title(); ?></a></div>
-              <?php endwhile; endif; wp_reset_postdata(); ?>
-            </div>
-          </div>
+          <?php if ($site_cms): ?>
+            <?php if ($site_cms != '🤷‍♂️'): ?>
+              <div class="rounded-lg shadow-lg mb-6">
+                <h2 class="text-gray-200 text-lg text-center bg-theme-dark rounded-t-lg p-3"><?php _e("Ще сайти на CMS", "catalog-wp"); ?> <?php echo $site_cms; ?></h2>
+                <div class="bg-white rounded-b-lg p-3">
+                  <?php 
+                    $top_sites = new WP_Query( array( 
+                      'post_type' => 'sites', 
+                      'posts_per_page' => 10,
+                      'order' => 'DESC',
+                      'meta_query' => array(
+                        'relation' => 'AND',
+                        array(
+                          'key' => 'check_site_cms_meta',
+                          'value' => $site_cms,
+                          'compare' => 'IN',
+                        ),
+                        array(
+                          'orderby'   => 'rand',
+                        ),
+                      ),
+                    ) );
+                    if ($top_sites->have_posts()) : while ($top_sites->have_posts()) : $top_sites->the_post(); 
+                  ?>
+                    <div class="border-b border-gray-200 last-of-type:border-transparent mb-2 last-of-type:mb-0 pb-2 last-of-type:pb-0"><a href="<?php the_permalink(); ?>" class="text-gray-700 hover:text-blue-500"><?php the_title(); ?></a></div>
+                  <?php endwhile; endif; wp_reset_postdata(); ?>
+                </div>
+              </div>
+            <?php endif; ?>
           <?php endif; ?>
         <?php endif; ?>
         <!-- Now see -->
