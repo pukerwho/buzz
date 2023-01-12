@@ -4,8 +4,8 @@
   <?php 
     $current_title = wp_get_document_title();
     if ( is_singular( 'sites' ) ) {
+      $site_url = get_the_title();
       if (get_locale() === 'uk') {
-        $site_url = get_the_title();
         $current_title = 'Аналіз сайту ' . $site_url;
       } else {
         $current_title = 'Анализ сайта ' . $site_url;
