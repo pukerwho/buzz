@@ -370,7 +370,7 @@
         </div>
 
         <!-- our -->
-        <div class="rounded-lg shadow-lg">
+        <div class="rounded-lg shadow-lg mb-6">
           <h2 class="text-lg text-center bg-red-200 rounded-t-lg p-3">💙 <?php _e("Наш вибір", "catalog-wp"); ?></h2>
           <div class="bg-white rounded-b-lg p-3">
             <?php 
@@ -383,6 +383,21 @@
             ?>
               <div class="border-b border-gray-200 last-of-type:border-transparent mb-2 last-of-type:mb-0 pb-2 last-of-type:pb-0"><a href="<?php the_permalink(); ?>" class="text-gray-700 hover:text-blue-500"><?php the_title(); ?></a></div>
             <?php endwhile; endif; wp_reset_postdata(); ?>
+          </div>
+        </div>
+
+        <!-- links -->
+        <div class="super-links rounded-lg shadow-lg">
+          <h2 class="text-lg text-center bg-indigo-200 rounded-t-lg p-3">👍🏻 <?php _e("Корисні посилання", "catalog-wp"); ?></h2>
+          <div class="bg-white rounded-b-lg p-3">
+            <?php 
+              $current_url = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+              $super_links = super_links($current_url);
+              // shuffle($super_links);
+              foreach ($super_links as $super_link):
+            ?>
+              <?php echo $super_link->top_links; ?>
+            <?php endforeach; ?>
           </div>
         </div>
       </div>

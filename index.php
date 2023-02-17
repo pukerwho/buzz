@@ -76,7 +76,7 @@
           <?php 
             $top_sites = new WP_Query( array( 
               'post_type' => 'sites', 
-              'posts_per_page' => 4,
+              'posts_per_page' => 3,
               'order' => 'DESC'
             ) );
             if ($top_sites->have_posts()) : while ($top_sites->have_posts()) : $top_sites->the_post(); 
@@ -88,6 +88,7 @@
           <div class="border-b border-gray-200 last-of-type:border-transparent mb-2 last-of-type:mb-0 pb-2 last-of-type:pb-0"><a href="https://webgolovolomki.com/" class="text-gray-700 hover:text-blue-500">webgolovolomki.com</a></div>
           <div class="border-b border-gray-200 last-of-type:border-transparent mb-2 last-of-type:mb-0 pb-2 last-of-type:pb-0"><a href="https://sdamkvartiry.com/" class="text-gray-700 hover:text-blue-500">sdamkvartiry.com</a></div>
           <div class="border-b border-gray-200 last-of-type:border-transparent mb-2 last-of-type:mb-0 pb-2 last-of-type:pb-0"><a href="https://treba-solutions.com/" class="text-gray-700 hover:text-blue-500">treba-solutions.com</a></div>
+          <div class="border-b border-gray-200 last-of-type:border-transparent mb-2 last-of-type:mb-0 pb-2 last-of-type:pb-0"><a href="https://auto-future.land/" class="text-gray-700 hover:text-blue-500">auto-future.land</a></div>
           <div class="border-b border-gray-200 last-of-type:border-transparent mb-2 last-of-type:mb-0 pb-2 last-of-type:pb-0"><a href="https://s-cast.ua/" class="text-gray-700 hover:text-blue-500">s-cast.ua</a></div>
         </div>
       </div>
