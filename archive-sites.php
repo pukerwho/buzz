@@ -37,7 +37,7 @@
             $all_sites = new WP_Query( array(
               'post_type' => 'sites',
               'orderby' => 'date',
-              'posts_per_page' => 10,
+              'posts_per_page' => 30,
               'paged' => $current, 
             ));
             if ($all_sites->have_posts()) : while ($all_sites->have_posts()) : $all_sites->the_post(); ?>

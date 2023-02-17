@@ -42,7 +42,7 @@ get_header();
             $all_sites = new WP_Query( array(
               'post_type' => 'sites',
               'orderby' => 'date',
-              'posts_per_page' => 10,
+              'posts_per_page' => 30,
               'paged' => $current, 
               'meta_query' => array(
                 array(
