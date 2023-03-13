@@ -7,6 +7,7 @@ include('priazovka-links.php');
 include('tarakan-links.php');
 include('sdam-links.php');
 include('autofuture-links.php');
+include('leopets-links.php');
 
 function links_activated() {
   global $wpdb;
@@ -84,13 +85,16 @@ function prepare_links() {
   $tarakan = tarakan_create_link();
   $priazovka = priazovka_create_link();
 
-  $rand_i = mt_rand(1, 2);
+  $rand_i = mt_rand(1, 3);
   switch ($rand_i) {
     case 1:
       $client = scast_create_link();
       break;
     case 2:
       $client = autofuture_create_link();
+      break;
+    case 3:
+      $client = leopets_create_link();
       break;
   }
 

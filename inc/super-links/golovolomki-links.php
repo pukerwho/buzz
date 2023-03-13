@@ -970,104 +970,190 @@ function webg_links() {
 "раскадровка видео простыми словами",
       )
     ),
-    // 79 =>
-    // array (
-    //   "link" => "",
-    //   "anchors" => array (
-        
-    //   )
-    // ),
-    // 80 =>
-    // array (
-    //   "link" => "",
-    //   "anchors" => array (
-        
-    //   )
-    // ),
-    // 81 =>
-    // array (
-    //   "link" => "",
-    //   "anchors" => array (
-        
-    //   )
-    // ),
-    // 82 =>
-    // array (
-    //   "link" => "",
-    //   "anchors" => array (
-        
-    //   )
-    // ),
-    // 83 =>
-    // array (
-    //   "link" => "",
-    //   "anchors" => array (
-        
-    //   )
-    // ),
-    // 84 =>
-    // array (
-    //   "link" => "",
-    //   "anchors" => array (
-        
-    //   )
-    // ),
-    // 85 =>
-    // array (
-    //   "link" => "",
-    //   "anchors" => array (
-        
-    //   )
-    // ),
-    // 86 =>
-    // array (
-    //   "link" => "",
-    //   "anchors" => array (
-        
-    //   )
-    // ),
-    // 87 =>
-    // array (
-    //   "link" => "",
-    //   "anchors" => array (
-        
-    //   )
-    // ),
-    // 88 =>
-    // array (
-    //   "link" => "",
-    //   "anchors" => array (
-        
-    //   )
-    // ),
-    // 89 =>
-    // array (
-    //   "link" => "",
-    //   "anchors" => array (
-        
-    //   )
-    // ),
-    // 90 =>
-    // array (
-    //   "link" => "",
-    //   "anchors" => array (
-        
-    //   )
-    // ),
-    // 91 =>
-    // array (
-    //   "link" => "",
-    //   "anchors" => array (
-        
-    //   )
-    // ),
-    // 92 =>
-    // array (
-    //   "link" => "",
-    //   "anchors" => array (
-        
-    //   )
-    // ),
+    79 =>
+    array (
+      "link" => "https://webgolovolomki.com/uk/yak-vydalyty-akaunt-v-instahrami/",
+      "anchors" => array (
+        "видалити акаунт в Instagram на iPhone",
+"видалити акаунт в Instagram на Android",
+"як видалити свій акаунт в Instagram",
+"покрокова інструкція як видалити акаунт в Інстаграмі",
+"видалення облікового запису Instagram",
+"як заморозити сторінку в Інстаграмі",
+"як видалити сторінку в Інстаграм тимчасово",
+"як видалити сторінку в інстаграм з комп'ютера",
+      )
+    ),
+    80 =>
+    array (
+      "link" => "https://webgolovolomki.com/kak-udalit-akkaunt-v-instagrame/",
+      "anchors" => array (
+        "удалить аккаунт в Instagram на iPhone",
+"удалить аккаунт в Instagram на Android",
+"как удалить свой аккаунт в Instagram",
+"пошаговая инструкция как удалить аккаунт в Instagram",
+"удаление аккаунта Instagram",
+"как заморозить страницу в Instagram",
+"как удалить страницу в Instagram временно",
+"как удалить страницу в Instagram с компьютера",
+      )
+    ),
+    81 =>
+    array (
+      "link" => "https://webgolovolomki.com/uk/highlights-v-instagrami/",
+      "anchors" => array (
+        "як зробити Highlights в Інстаграмі",
+"де знайти Highlights в Інстаграм",
+"як додати хайлайтс в Інстаграм",
+"для чого потрібен хайлайтс в Інстаграмі",
+"ідеї для Highlights",
+"як додати сторіс в хайлайтс",
+      )
+    ),
+    82 =>
+    array (
+      "link" => "https://webgolovolomki.com/highlights-v-instagrame/",
+      "anchors" => array (
+        "как сделать Highlights в Instagram",
+"где найти Highlights в Instagram",
+"как добавить хайлайтс в Инстаграм",
+"для чего нужен хайлайтс в Instagram",
+"идеи для Highlights",
+"добавить в хайлайтс",
+      )
+    ),
+    83 =>
+    array (
+      "link" => "https://webgolovolomki.com/uk/yak-zarobliaty-v-instagram/",
+      "anchors" => array (
+        "як заробляти в Інстаграмі на лайках",
+"як можна заробити в Інстаграмі у 2023 році",
+"скільки можна заробляти в Інстаграмі",
+"скільки заробляють блогери мільйонники",
+"скільки заробляють блогери в місяць",
+"як заробити гроші в Instagram",
+      )
+    ),
+    84 =>
+    array (
+      "link" => "https://webgolovolomki.com/kak-zarabatyvat-v-instagram/",
+      "anchors" => array (
+        "как зарабатывать в Instagram на лайках",
+"как можно заработать в Instagram в 2023 году",
+"сколько можно зарабатывать в Instagram",
+"сколько зарабатывают блоггеры миллионники",
+"сколько зарабатывают блоггеры в месяц",
+"как заработать деньги в Instagram",
+      )
+    ),
+    85 =>
+    array (
+      "link" => "https://webgolovolomki.com/uk/yak-zrobyty-stikery-v-telegram/",
+      "anchors" => array (
+        "стікери в Telegram",
+"як зробити стікери в Telegram",
+"як додати стікери в Telegram",
+"розмір та формат стікерів в Telegram",
+"як зробити анімовані стікери в Telegram",
+"інструменти для створення стікерів в Telegram",
+"рекомендації щодо створення стікерів в Telegram",
+"як додати стікери до свого набору в Telegram",
+"як додати набір стікерів до Telegram-каналу",
+"розміщення стікерів в магазині стікерів Telegram",
+      )
+    ),
+    86 =>
+    array (
+      "link" => "https://webgolovolomki.com/kak-sdelat-stikery-v-telegram/",
+      "anchors" => array (
+        "стикеры в Telegram",
+"как сделать стикеры в Telegram",
+"как добавить стикеры в Telegram",
+"размер и формат стикеров в Telegram",
+"как сделать анимированные стикеры в Telegram",
+"инструменты для создания стикеров в Telegram",
+"рекомендации по созданию стикеров в Telegram",
+"добавить стикеры в свой набор в Telegram",
+"как добавить набор стикеров к Telegram-каналу",
+"размещение стикеров в магазине стикеров Telegram",
+      )
+    ),
+    87 =>
+    array (
+      "link" => "https://webgolovolomki.com/uk/yak-ochystyty-kesh-v-telegram/",
+      "anchors" => array (
+        "кеш Telegram",
+"обсяг кешу Telegram",
+"видалення кешу Telegram",
+"очистити кеш Telegram на Android",
+"очистити кеш Telegram на iOS",
+"як очистити кеш Telegram на комп'ютері",
+"що буде якщо очистити кеш в Telegram",
+"проблеми з кешем Telegram",
+"видалення тимчасових файлів Telegram",
+"видалення кешу медіафайлів в Telegram",
+      )
+    ),
+    88 =>
+    array (
+      "link" => "https://webgolovolomki.com/kak-ochistit-kesh-v-telegram/",
+      "anchors" => array (
+        "кэш Telegram",
+"объем кэша Telegram",
+"удаление кэша Telegram",
+"очистить кэш Telegram на Android",
+"очистить кэш Telegram на iOS",
+"как очистить кэш Telegram на компьютере",
+"что будет если очистить кэш в Telegram",
+"проблемы с кэшем Telegram",
+"удаление временных файлов Telegram",
+"удаление кэша медиафайлов в Telegram",
+      )
+    ),
+    89 =>
+    array (
+      "link" => "https://webgolovolomki.com/uk/yak-poskarzhytysia-na-telegram-kanal-detalna-instruktsiia/",
+      "anchors" => array (
+        "як подати скаргу на Telegram канал",
+"як відправити скаргу на Telegram канал",
+"як пожалітися на Telegram канал",
+"як звернутися до адміністрації Telegram каналу",
+"які порушення вважаються недопустимими на Telegram каналах",
+"як заблокувати Telegram канал",
+"що робити якщо Telegram канал порушує законодавство",
+      )
+    ),
+    90 =>
+    array (
+      "link" => "https://webgolovolomki.com/kak-pozhalovatsya-na-telegram-kanal-podrobnaya-instrukciya/",
+      "anchors" => array (
+        "как подать жалобу на Telegram канал",
+"как отправить жалобу на Telegram канал",
+"как пожаловаться на Telegram канал",
+"как обратиться в администрацию Telegram канала",
+"какие нарушения считаются недопустимыми на Telegram каналах",
+"как заблокировать Telegram канал",
+"что делать если Telegram канал нарушает законодательство",
+      )
+    ),
+    91 =>
+    array (
+      "link" => "https://webgolovolomki.com/uk/yak-zavantazhyty-holosove-povidomlennia-v-telegram/",
+      "anchors" => array (
+        "завантажити голосове повідомлення в Telegram",
+"як скачати голосове повідомлення в Telegram",
+"як зберегти голосове повідомлення в Telegram",
+      )
+    ),
+    92 =>
+    array (
+      "link" => "https://webgolovolomki.com/kak-zagruzit-golosovoe-soobshchenie-v-telegram/",
+      "anchors" => array (
+        "скачать голосовое сообщение в Telegram",
+"как скачать голосовое сообщение в Telegram",
+"как сохранить голосовое сообщение в Telegram",
+      )
+    ),
     // 93 =>
     // array (
     //   "link" => "",
