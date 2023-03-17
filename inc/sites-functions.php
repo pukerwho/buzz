@@ -1,5 +1,23 @@
 <?php
 
+function save_rand_meta($id, $meta_name, $meta_value) {
+  $tr_array_id = array();
+  $tr_ids = pll_get_post_translations($id);
+  foreach ($tr_ids as $tr_id) {
+    array_push($tr_array_id, $tr_id);
+  }
+  foreach ($tr_array_id as $post_id) {
+    if ( metadata_exists( 'post', $post_id, $meta_name ) ) {
+      $get_meta = get_post_meta( $post_id, $meta_name, true );
+      return $get_meta;
+    } else {
+      add_post_meta( $post_id, $meta_name, $meta_value, true );
+      $get_meta = get_post_meta( $post_id, $meta_name, true );
+      return $get_meta;
+    }
+  }
+}
+
 //Main Rating 
 function main_rating($id) {
   $tr_array_id = array();

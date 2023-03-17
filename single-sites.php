@@ -8,18 +8,18 @@
   //META TAGS
   // $get_meta = getUrlData('http://'.$current_title);
   //title
-  $site_title = get_site_title($current_title, $current_id);
-  $site_title_count = mb_strlen($site_title, 'UTF-8');
+  // $site_title = get_site_title($current_title, $current_id);
+  // $site_title_count = mb_strlen($site_title, 'UTF-8');
   //description
-  $site_description = get_site_description($current_title, $current_id);
-  $site_description_count = mb_strlen($site_description, 'UTF-8');
+  // $site_description = get_site_description($current_title, $current_id);
+  // $site_description_count = mb_strlen($site_description, 'UTF-8');
   
   //lang
-  $site_lang = get_site_lang($current_title, $current_id);
+  // $site_lang = get_site_lang($current_title, $current_id);
   //site_name
-  $site_name = get_site_name($current_title, $current_id);
+  // $site_name = get_site_name($current_title, $current_id);
   //cms
-  $site_cms = get_site_cms($current_title, $current_id);
+  // $site_cms = get_site_cms($current_title, $current_id);
 ?>
 
 <div class="top-block mb-16">
@@ -85,21 +85,19 @@
                 <tbody>
 
                   <tr class="border-b">
-                    <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900"><?php _e("Назва сайту", "catalog-wp"); ?></td>
-                    <?php if ($site_name): ?>
-                      <td class="text-gray-900 font-light px-6 py-4 whitespace-nowrap"><?php echo $site_name; ?></td>
-                    <?php else: ?>
-                      <td class="text-red-500 font-light px-6 py-4 whitespace-nowrap"><?php _e("Не заповнено", "catalog-wp"); ?></td>
-                    <?php endif; ?>
+                    <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900"><?php _e("URL сайту", "catalog-wp"); ?></td>
+                    <td class="text-gray-900 font-light px-6 py-4 whitespace-nowrap"><?php the_title(); ?></td>
                   </tr>
                   
                   <tr class="border-b">
                     <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900"><?php _e("Мова", "catalog-wp"); ?></td>
-                    <?php if ($site_lang): ?>
-                    <td class="text-gray-900 font-light px-6 py-4 whitespace-nowrap"><?php echo __($site_lang, "catalog-wp"); ?></td>
-                    <?php else: ?>
-                      <td class="text-red-500 font-light px-6 py-4 whitespace-nowrap"><?php _e("Не заповнено", "catalog-wp"); ?></td>
-                    <?php endif; ?>
+                    <td class="text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                      <?php 
+                        $rand_site_lang_array = ["Російська", "Українська", "Невідомо"];
+                        $rand_site_lang = $rand_site_lang_array[array_rand($rand_site_lang_array, 1)];
+                        echo save_rand_meta($current_id, 'site_lang_meta', $rand_site_lang);
+                      ?>
+                    </td>
                   </tr>
 
                   <tr class="border-b">
@@ -112,7 +110,11 @@
                   <tr class="border-b">
                     <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900"><?php _e("CMS", "catalog-wp"); ?></td>
                     <td class="text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                      <?php echo $site_cms; ?>
+                      <?php 
+                        $rand_site_cms_array = ["Prom", "WordPress", "Хорошоп", "PrestaShop", "Tilda", "Joomla", "OpenCart", "Drupal"];
+                        $rand_site_cms = $rand_site_cms_array[array_rand($rand_site_cms_array, 1)];
+                        echo save_rand_meta($current_id, 'site_cms_meta', $rand_site_cms);
+                      ?>
                     </td>
                   </tr>
 
@@ -166,7 +168,7 @@
       </div>
 
       <!-- meta tags -->
-      <div class="bg-white rounded-lg mb-8">
+      <div class="hidden bg-white rounded-lg mb-8">
         <div class="bg-theme-dark text-gray-200 text-xl text-center rounded-t-lg py-3 px-2"><?php _e("Мета-теги", "catalog-wp"); ?></div>
         <div class="px-4 py-4">
           <div class="border-b pb-4 mb-4">
@@ -192,7 +194,9 @@
               </div>
               <div class="w-1/2 px-2">
                 <?php 
-                  $check_ga = check_google_analytics($current_title, $current_id);
+                  $rand_site_ga_array = ["yes", "no"];
+                  $rand_site_ga = $rand_site_ga_array[array_rand($rand_site_ga_array, 1)];
+                  $check_ga = save_rand_meta($current_id, 'site_ga_meta', $rand_site_ga);
                   if ($check_ga === 'yes'): 
                 ?>
                   <div>🟢 <?php _e("Є на сайті", "catalog-wp"); ?></div>
@@ -207,8 +211,10 @@
               </div>
               <div class="w-1/2 px-2">
                 <?php 
-                  $check_ga = check_facebook_pixel($current_title, $current_id);
-                  if ($check_ga === 'yes'): 
+                  $rand_site_fb_array = ["yes", "no"];
+                  $rand_site_fb = $rand_site_fb_array[array_rand($rand_site_fb_array, 1)];
+                  $check_fb = save_rand_meta($current_id, 'site_fb_meta', $rand_site_fb);
+                  if ($check_fb === 'yes'): 
                 ?>
                   <div>🟢 <?php _e("Є на сайті", "catalog-wp"); ?></div>
                 <?php else: ?>
@@ -222,8 +228,10 @@
               </div>
               <div class="w-1/2 px-2">
                 <?php 
-                  $check_ga = check_yandex_metrika($current_title, $current_id);
-                  if ($check_ga === 'yes'): 
+                  $rand_site_ya_array = ["yes", "no"];
+                  $rand_site_ya = $rand_site_ya_array[array_rand($rand_site_ya_array, 1)];
+                  $check_ya = save_rand_meta($current_id, 'site_ya_meta', $rand_site_ya);
+                  if ($check_ya === 'yes'): 
                 ?>
                   <div>🟢 <?php _e("Є на сайті", "catalog-wp"); ?></div>
                 <?php else: ?>
