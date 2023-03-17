@@ -95,7 +95,8 @@
                       <?php 
                         $rand_site_lang_array = ["Російська", "Українська", "Невідомо"];
                         $rand_site_lang = $rand_site_lang_array[array_rand($rand_site_lang_array, 1)];
-                        echo save_rand_meta($current_id, 'site_lang_meta', $rand_site_lang);
+                        $get_site_lang = save_rand_meta($current_id, 'site_lang_meta', $rand_site_lang);
+                        __($get_site_lang, "catalog-wp");
                       ?>
                     </td>
                   </tr>
