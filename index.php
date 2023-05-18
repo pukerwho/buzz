@@ -73,7 +73,7 @@
       <div class="rounded-lg shadow-lg">
         <h2 class="text-lg text-center bg-red-200 rounded-t-lg p-3">💙 <?php _e("Наш вибір", "catalog-wp"); ?></h2>
         <div class="bg-white rounded-b-lg p-3">
-          <div class="border-b border-gray-200 last-of-type:border-transparent mb-2 last-of-type:mb-0 pb-2 last-of-type:pb-0"><a href="https://leopets.com.ua/" class="text-gray-700 hover:text-blue-500">leopets.com.ua</a></div>
+          <div class="border-b border-gray-200 last-of-type:border-transparent mb-2 last-of-type:mb-0 pb-2 last-of-type:pb-0"><a href="https://animalcaretakerjobs.com/?p=71" class="text-gray-700 hover:text-blue-500">animalcaretakerjobs.com</a></div>
           <div class="border-b border-gray-200 last-of-type:border-transparent mb-2 last-of-type:mb-0 pb-2 last-of-type:pb-0"><a href="https://d-art.org.ua/" class="text-gray-700 hover:text-blue-500">d-art.org.ua</a></div>
           <div class="border-b border-gray-200 last-of-type:border-transparent mb-2 last-of-type:mb-0 pb-2 last-of-type:pb-0"><a href="https://icatalog.pro/" class="text-gray-700 hover:text-blue-500">icatalog.pro</a></div>
           <div class="border-b border-gray-200 last-of-type:border-transparent mb-2 last-of-type:mb-0 pb-2 last-of-type:pb-0"><a href="https://tarakan.org.ua/" class="text-gray-700 hover:text-blue-500">tarakan.org.ua</a></div>

@@ -69,11 +69,48 @@ function save_links($id) {
   }
 }
 
+function update_client_link($link_id, $client) {
+  global $wpdb;
+  $wpdb->update('super_seo_links', array('top_links'=>$client), array('ID'=>$link_id));
+}
+
 // Get links
 function get_super_links($id) {
   global $wpdb;
   $current_top_links = $wpdb->get_results("SELECT top_links FROM super_seo_links WHERE post_URL = '$id'");
+
+  $old_sites = ["leopets.com.ua"];
+  foreach ($current_top_links as $key => $link) {
+    foreach ($old_sites as $old) {
+      if (strpos($link->top_links, $old)) {
+        // get all links from current post
+        $get_id_link = $wpdb->get_results("SELECT * FROM super_seo_links WHERE post_URL = '$id'");
+        // find id link
+        $link_id = $get_id_link[$key]->ID;
+        // create new client link
+        $client = prepare_client_link();
+        // save in db
+        update_client_link($link_id, $client);
+      }
+    }
+  }
+
+  $current_top_links = $wpdb->get_results("SELECT top_links FROM super_seo_links WHERE post_URL = '$id'");
   return $current_top_links;
+}
+
+// Create random client link
+function prepare_client_link() {
+  $rand_i = mt_rand(1, 2);
+  switch ($rand_i) {
+    case 1:
+      $client = scast_create_link();
+      break;
+    case 2:
+      $client = autofuture_create_link();
+      break;  
+  }
+  return $client;
 }
 
 // Get new links 
@@ -84,19 +121,7 @@ function prepare_links() {
   $sdam = sdam_create_link();
   $tarakan = tarakan_create_link();
   $priazovka = priazovka_create_link();
-
-  $rand_i = mt_rand(1, 3);
-  switch ($rand_i) {
-    case 1:
-      $client = scast_create_link();
-      break;
-    case 2:
-      $client = autofuture_create_link();
-      break;
-    case 3:
-      $client = leopets_create_link();
-      break;
-  }
+  $client = prepare_client_link();
 
   array_push($all_links, $webg, $treba, $sdam, $tarakan, $priazovka, $client); 
   shuffle($all_links);
