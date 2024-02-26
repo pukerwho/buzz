@@ -1,13 +1,17 @@
 <?php 
 
-include('golovolomki-links.php');
-include('scast-links.php');
-include('treba-links.php');
-include('priazovka-links.php');
-include('tarakan-links.php');
-include('sdam-links.php');
-include('autofuture-links.php');
-include('leopets-links.php');
+// include('golovolomki-links.php');
+// include('scast-links.php');
+// include('treba-links.php');
+// include('priazovka-links.php');
+// include('tarakan-links.php');
+// include('sdam-links.php');
+// include('autofuture-links.php');
+// include('leopets-links.php');
+include('bookcook-links.php');
+include('freeapp-links.php');
+include('santmat-links.php');
+include('odysseys-links.php');
 
 function links_activated() {
   global $wpdb;
@@ -116,14 +120,18 @@ function prepare_client_link() {
 // Get new links 
 function prepare_links() {
   $all_links = array();
-  $webg = webg_create_link();
-  $treba = treba_create_link();
-  $sdam = sdam_create_link();
-  $tarakan = tarakan_create_link();
-  $priazovka = priazovka_create_link();
-  $client = prepare_client_link();
+  // $webg = webg_create_link();
+  // $treba = treba_create_link();
+  // $sdam = sdam_create_link();
+  // $tarakan = tarakan_create_link();
+  // $priazovka = priazovka_create_link();
+  // $client = prepare_client_link();
+  $bookcook = bookcook_create_link();
+  $freeapp = freeappcomua_create_link();
+  $santmat = santmatnetua_create_link();
+  $odysseys = odysseuscomua_create_link();
 
-  array_push($all_links, $webg, $treba, $sdam, $tarakan, $priazovka, $client); 
+  array_push($all_links, $bookcook, $freeapp, $santmat, $odysseys); 
   shuffle($all_links);
   return $all_links;
 }
