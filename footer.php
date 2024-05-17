@@ -14,7 +14,7 @@
           <div class="font-semibold"><?php _e("Більш ніж", "catalog-wp"); ?> <span class="text-yellow-200">1000</span> <?php _e("сайтів", "catalog-wp"); ?></div>
         </div>
         <div>
-          
+          <a href="https://sviato.top/"><img src="https://buzzmyworld.com/wp-content/uploads/2024/05/sviato.jpeg" alt="Sviato.top" width="25"></a>
         </div>
       </div>
 
