@@ -17,6 +17,7 @@ function crb_post_theme_options() {
   Container::make( 'post_meta', 'More' )
     ->where( 'post_type', '=', 'sites' )
     ->add_fields( array(
+      Field::make( 'checkbox', 'crb_site_url_show', 'Показати url?' ),
       Field::make( 'text', 'crb_site_whois_status', 'Статус' ),
       Field::make( 'text', 'crb_site_whois_start', 'Дата реестрації' ),
       Field::make( 'text', 'crb_site_whois_end', 'Дата закінчення' ),

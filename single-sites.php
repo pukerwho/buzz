@@ -86,7 +86,17 @@
 
                   <tr class="border-b">
                     <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900"><?php _e("URL сайту", "catalog-wp"); ?></td>
-                    <td class="text-gray-900 font-light px-6 py-4 whitespace-nowrap"><?php the_title(); ?></td>
+                    <td class="text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                      <?php if (carbon_get_the_post_meta("crb_site_url_show")): ?>
+                        <?php 
+                          $site = get_the_title();
+                          $link = "http://".$site;
+                        ?>
+                        <a href="<?php echo $link; ?>" target="_blank"><?php the_title(); ?></a>
+                      <?php else: ?>
+                        <?php the_title(); ?>
+                      <?php endif; ?>
+                    </td>
                   </tr>
                   
                   <tr class="border-b">
